@@ -9,8 +9,7 @@ type ArtCategoryKey =
   | "allArtMaterial"
   | "bloodArt"
   | "pencilSketch"
-  | "colourPencilSketch"
-  | "wedding";
+  | "colourPencilSketch";
 
 type ArtCategory = {
   id: ArtCategoryKey;
@@ -22,18 +21,6 @@ type ArtCategory = {
 };
 
 const categories: ArtCategory[] = [
-  {
-    id: "wedding",
-    title: "Wedding Art",
-    subtitle: "Special moments captured in art",
-    description:
-      "Beautiful artistic representations of wedding moments, from intimate ceremonies to grand celebrations. Custom pieces that preserve your special day forever.",
-    accent: "from-rose-500 via-pink-400 to-amber-300",
-    images: [
-      "/art/wedding/hero-wedding.jpg",
-      // Add more wedding images here as they become available
-    ],
-  },
   {
     id: "wallArt",
     title: "Wall Art",
