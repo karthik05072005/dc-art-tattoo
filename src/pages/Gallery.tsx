@@ -194,7 +194,7 @@ const Gallery = () => {
   
   return <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-charcoal to-background">
+      <section className="py-20 bg-gradient-to-b from-secondary to-background">
         <div className="container mx-auto px-4">
           <div className="text-center animate-fade-up">
             <h1 className="text-5xl font-bold mb-6 text-foreground">
@@ -209,7 +209,7 @@ const Gallery = () => {
       </section>
 
       {/* Filter Section */}
-      <section className="py-12 bg-charcoal">
+      <section className="py-12 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in">
             {categories.map(category => <Button key={category} onClick={() => setSelectedCategory(category)} variant={selectedCategory === category ? "default" : "outline"} className={selectedCategory === category ? "bg-primary hover:bg-primary/90 text-primary-foreground" : "border-border text-foreground hover:border-primary hover:text-primary"}>
@@ -241,7 +241,7 @@ const Gallery = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-charcoal">
+      <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto animate-fade-up">
             <h2 className="text-4xl font-bold mb-6 text-foreground">

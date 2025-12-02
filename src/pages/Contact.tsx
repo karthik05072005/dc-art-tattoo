@@ -47,7 +47,7 @@ Preferred Date: ${formData.preferredDate}`;
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-charcoal to-background">
+      <section className="py-20 bg-gradient-to-b from-secondary to-background">
         <div className="container mx-auto px-4">
           <div className="text-center animate-fade-up">
             <h1 className="text-5xl font-bold mb-6 text-foreground">
@@ -236,7 +236,7 @@ Preferred Date: ${formData.preferredDate}`;
       </section>
 
       {/* Map Section */}
-      <section className="py-20 bg-charcoal">
+      <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12 animate-fade-up">

@@ -73,7 +73,7 @@ const Home = () => {
       </section>
 
       {/* About Preview */}
-      <section className="py-20 bg-charcoal">
+      <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-up">
@@ -142,7 +142,7 @@ const Home = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="py-20 bg-charcoal">
+      <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-up">
             <h2 className="text-4xl font-bold mb-4 text-foreground">

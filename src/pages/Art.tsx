@@ -227,7 +227,7 @@ const Art = () => {
   const current = categories.find((c) => c.id === activeCategory) ?? categories[0];
 
   return (
-    <div className="min-h-screen pt-20 bg-gradient-to-b from-background via-charcoal to-background">
+    <div className="min-h-screen pt-20 bg-gradient-to-b from-background via-secondary to-background">
       {/* Hero */}
       <section className="py-20">
         <div className="container mx-auto px-4 text-center max-w-4xl mx-auto">
@@ -260,7 +260,7 @@ const Art = () => {
                 className={
                   activeCategory === category.id
                     ? "bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/30"
-                    : "border-border text-foreground hover:border-primary hover:text-primary bg-charcoal"
+                    : "border-border text-foreground hover:border-primary hover:text-primary bg-secondary"
                 }
               >
                 {category.title}
@@ -279,7 +279,7 @@ const Art = () => {
               <div
                 className={`rounded-3xl border border-border bg-gradient-to-br ${current.accent} p-[1px] shadow-[0_18px_60px_rgba(0,0,0,0.7)]`}
               >
-                <div className="rounded-3xl bg-gradient-to-b from-charcoal/95 via-background/95 to-charcoal/90 px-6 py-7 md:px-8 md:py-9">
+                <div className="rounded-3xl bg-gradient-to-b from-secondary/95 via-background/95 to-secondary/90 px-6 py-7 md:px-8 md:py-9">
                   <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground mb-3">
                     {current.subtitle ?? "Art Category"}
                   </p>
@@ -293,14 +293,14 @@ const Art = () => {
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
-                <div className="rounded-2xl bg-charcoal/80 border border-border/60 p-4 backdrop-blur">
+                <div className="rounded-2xl bg-secondary/80 border border-border/60 p-4 backdrop-blur">
                   <p className="font-semibold text-foreground mb-1">Ideal for</p>
                   <p>
                     Homes, studios, and commercial spaces that want a{" "}
                     <span className="text-primary font-semibold">strong artistic identity</span>.
                   </p>
                 </div>
-                <div className="rounded-2xl bg-charcoal/80 border border-border/60 p-4 backdrop-blur">
+                <div className="rounded-2xl bg-secondary/80 border border-border/60 p-4 backdrop-blur">
                   <p className="font-semibold text-foreground mb-1">Commission Options</p>
                   <p>
                     Fully custom sizes, concepts, and color palettes to match your{" "}
@@ -309,7 +309,7 @@ const Art = () => {
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-border/70 bg-gradient-to-r from-background/80 via-charcoal/80 to-background/80 p-5 flex flex-col gap-3">
+              <div className="rounded-2xl border border-border/70 bg-gradient-to-r from-background/80 via-secondary/80 to-background/80 p-5 flex flex-col gap-3">
                 <p className="text-sm text-muted-foreground">
                   Looking for a specific idea or size? Share your wall, reference photos, or theme –
                   we’ll design a{" "}
