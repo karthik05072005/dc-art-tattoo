@@ -72,37 +72,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Preview */}
-      <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-up">
-              <h2 className="text-4xl font-bold mb-6 text-foreground">
-                Premium Art & <span className="text-primary">Tattoo Excellence</span>
-              </h2>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                At DC Art & Tattoo Studio, we blend artistic mastery with technical precision to create tattoos that tell your story. Our experienced artists specialize in diverse styles from bold realism to delicate minimal designs.
-              </p>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                Beyond tattoos, we offer custom pencil sketches, paintings, mixed media artwork, and dream catchers—all crafted with the same dedication to excellence that earned us a perfect 5.0★ rating.
-              </p>
-              <Link to="/about">
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Learn More About Us
-                </Button>
-              </Link>
-            </div>
-            <div className="relative animate-scale-in">
-              <img src={artistWorking} alt="Artist at work" className="rounded-lg shadow-2xl" />
-              <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 rounded-lg shadow-xl">
-                <div className="text-3xl font-bold">5+ Years</div>
-                <div className="text-sm">Experience</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Featured Work */}
       <section className="py-20">
         <div className="container mx-auto px-4">

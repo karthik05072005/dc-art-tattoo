@@ -22,8 +22,8 @@ const Navigation = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
+    { name: "Tattoo", path: "/gallery" },
     { name: "Art", path: "/art" },
-    { name: "Gallery", path: "/gallery" },
     { name: "Services", path: "/services" },
     { name: "About", path: "/about" },
     { name: "Reviews", path: "/reviews" },
@@ -39,7 +39,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-primary">DC</span>
+            <span className="text-2xl font-bold text-primary">D C</span>
             <span className="text-xl font-light text-foreground">Art & Tattoo</span>
           </Link>
 

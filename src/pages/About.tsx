@@ -1,6 +1,8 @@
 import { Palette, Heart, Shield, Award } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import artistWorking from "@/assets/artist-working.png";
+import raamImage from "@/assets/raam.jpg";
+import dcImage from "@/assets/dc.jpg";
 
 const About = () => {
   return (
@@ -39,10 +41,88 @@ const About = () => {
             </div>
             <div className="relative animate-scale-in">
               <img
-                src={artistWorking}
-                alt="Our Artist"
+                src={dcImage}
+                alt="DC Art & Tattoo Studio"
                 className="rounded-lg shadow-2xl"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Artists Section */}
+      <section className="py-20 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 animate-fade-up">
+            <h2 className="text-4xl font-bold mb-4 text-foreground">
+              Our <span className="text-primary">Artists</span>
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Meet the talented artists behind DC Art & Tattoo Studio
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Geetha D C */}
+            <div className="animate-fade-up">
+              <div className="rounded-lg overflow-hidden mb-6">
+                <img
+                  src={artistWorking}
+                  alt="Geetha D C"
+                  className="w-full h-80 object-cover"
+                />
+              </div>
+              <h3 className="text-2xl font-bold mb-2 text-foreground">Geetha D C</h3>
+              <div className="flex items-center mb-4">
+                <span className="text-primary font-semibold">Lead Artist & Founder</span>
+              </div>
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="bg-card p-4 rounded-lg border border-border">
+                  <p className="text-primary font-bold text-lg">5+ yrs</p>
+                  <p className="text-muted-foreground text-sm">Tattoo Experience</p>
+                </div>
+                <div className="bg-card p-4 rounded-lg border border-border">
+                  <p className="text-primary font-bold text-lg">10+ yrs</p>
+                  <p className="text-muted-foreground text-sm">Art Experience</p>
+                </div>
+              </div>
+              <p className="text-muted-foreground mb-3">
+                With 5+ years specializing in tattoo artistry and over a decade in fine arts, Geetha D C is the creative force behind DC Art & Tattoo Studio. Her journey began with traditional art forms and evolved into mastering the delicate art of skin illustration.
+              </p>
+              <p className="text-muted-foreground">
+                Geetha's expertise spans realism portraits, intricate linework, and custom designs that tell your unique story. Her meticulous attention to detail and deep understanding of color theory ensure each tattoo is not just ink on skin, but a lifelong masterpiece that ages beautifully.
+              </p>
+            </div>
+
+            {/* Ram */}
+            <div className="animate-fade-up" style={{ animationDelay: "200ms" }}>
+              <div className="rounded-lg overflow-hidden mb-6">
+                <img
+                  src={raamImage}
+                  alt="Ram"
+                  className="w-full h-80 object-cover"
+                />
+              </div>
+              <h3 className="text-2xl font-bold mb-2 text-foreground">Ram</h3>
+              <div className="flex items-center mb-4">
+                <span className="text-primary font-semibold">Senior Tattoo Artist</span>
+              </div>
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="bg-card p-4 rounded-lg border border-border">
+                  <p className="text-primary font-bold text-lg">7+ yrs</p>
+                  <p className="text-muted-foreground text-sm">Tattoo Experience</p>
+                </div>
+                <div className="bg-card p-4 rounded-lg border border-border">
+                  <p className="text-primary font-bold text-lg">12+ yrs</p>
+                  <p className="text-muted-foreground text-sm">Art Experience</p>
+                </div>
+              </div>
+              <p className="text-muted-foreground mb-3">
+                Ram brings over 7 years of dedicated tattoo expertise and more than 12 years in diverse artistic disciplines. His artistic journey encompasses traditional art forms, digital design, and specialized tattoo techniques that blend seamlessly in his work.
+              </p>
+              <p className="text-muted-foreground">
+                Specializing in geometric designs, blackwork, and vibrant color compositions, Ram is known for his precision, creativity, and ability to translate abstract concepts into stunning visual realities. His client-focused approach ensures every tattoo reflects your personal vision while maintaining artistic excellence.
+              </p>
             </div>
           </div>
         </div>

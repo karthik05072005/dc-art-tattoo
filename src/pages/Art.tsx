@@ -6,14 +6,11 @@ type ArtCategoryKey =
   | "wallArt"
   | "customised"
   | "handPaintings"
-  | "acrylic"
-  | "oil"
-  | "water"
   | "allArtMaterial"
-  | "sketches"
   | "bloodArt"
   | "pencilSketch"
-  | "colourPencilSketch";
+  | "colourPencilSketch"
+  | "wedding";
 
 type ArtCategory = {
   id: ArtCategoryKey;
@@ -25,6 +22,18 @@ type ArtCategory = {
 };
 
 const categories: ArtCategory[] = [
+  {
+    id: "wedding",
+    title: "Wedding Art",
+    subtitle: "Special moments captured in art",
+    description:
+      "Beautiful artistic representations of wedding moments, from intimate ceremonies to grand celebrations. Custom pieces that preserve your special day forever.",
+    accent: "from-rose-500 via-pink-400 to-amber-300",
+    images: [
+      "/art/wedding/hero-wedding.jpg",
+      // Add more wedding images here as they become available
+    ],
+  },
   {
     id: "wallArt",
     title: "Wall Art",
@@ -80,60 +89,6 @@ const categories: ArtCategory[] = [
     ],
   },
   {
-    id: "acrylic",
-    title: "Acrylic",
-    subtitle: "Bold color & texture",
-    description:
-      "Fast-drying, vibrant acrylics ideal for expressive, layered artworks with strong contrasts and modern energy.",
-    accent: "from-sky-500 via-cyan-400 to-teal-400",
-    images: [
-      "/art/acrylic/acrylic-1.jpg",
-      "/art/acrylic/acrylic-2.jpg",
-      "/art/acrylic/acrylic-3.jpg",
-      "/art/acrylic/acrylic-4.jpg",
-      "/art/acrylic/acrylic-5.jpg",
-      "/art/acrylic/acrylic-6.jpg",
-      "/art/acrylic/acrylic-7.jpg",
-      "/art/acrylic/acrylic-8.jpg",
-    ],
-  },
-  {
-    id: "oil",
-    title: "Oil Paintings",
-    subtitle: "Classic & timeless depth",
-    description:
-      "Rich, layered oil works with smooth blends, high detail, and a timeless fine-art finish.",
-    accent: "from-emerald-500 via-lime-400 to-amber-300",
-    images: [
-      "/art/oil/oil-1.jpg",
-      "/art/oil/oil-2.jpg",
-      "/art/oil/oil-3.jpg",
-      "/art/oil/oil-4.jpg",
-      "/art/oil/oil-5.jpg",
-      "/art/oil/oil-6.jpg",
-      "/art/oil/oil-7.jpg",
-      "/art/oil/oil-8.jpg",
-    ],
-  },
-  {
-    id: "water",
-    title: "Watercolour",
-    subtitle: "Soft, atmospheric washes",
-    description:
-      "Delicate transparencies, gradients, and organic textures for dreamy, fluid compositions.",
-    accent: "from-indigo-500 via-blue-400 to-sky-400",
-    images: [
-      "/art/watercolour/watercolour-1.jpg",
-      "/art/watercolour/watercolour-2.jpg",
-      "/art/watercolour/watercolour-3.jpg",
-      "/art/watercolour/watercolour-4.jpg",
-      "/art/watercolour/watercolour-5.jpg",
-      "/art/watercolour/watercolour-6.jpg",
-      "/art/watercolour/watercolour-7.jpg",
-      "/art/watercolour/watercolour-8.jpg",
-    ],
-  },
-  {
     id: "allArtMaterial",
     title: "All Art Material",
     subtitle: "Complete creative toolkit",
@@ -149,23 +104,6 @@ const categories: ArtCategory[] = [
       "/art/all-art-material/all-art-material-6.jpg",
       "/art/all-art-material/all-art-material-7.jpg",
       "/art/all-art-material/all-art-material-8.jpg",
-    ],
-  },
-  {
-    id: "sketches",
-    title: "Sketches",
-    subtitle: "Raw ideas & concepts",
-    description:
-      "Freehand explorations that capture movement, proportion, and character before final execution.",
-    accent: "from-slate-500 via-slate-400 to-zinc-300",
-    images: [
-      "/art/sketches/sketch-1.jpg",
-      "/art/sketches/sketch-2.jpg",
-      "/art/sketches/sketch-3.jpg",
-      "/art/sketches/sketch-4.jpg",
-      "/art/sketches/sketch-5.jpg",
-      "/art/sketches/sketch-6.jpg",
-      "/art/sketches/sketch-7.jpg",
     ],
   },
   {
