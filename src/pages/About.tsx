@@ -10,7 +10,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-up">
             <h1 className="text-5xl font-bold mb-6 text-foreground">
-              About <span className="text-gold">DC Art & Tattoo Studio</span>
+              About <span className="text-primary">DC Art & Tattoo Studio</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Where passion for art meets precision in tattooing—creating masterpieces on skin since years
@@ -25,7 +25,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-up">
               <h2 className="text-4xl font-bold mb-6 text-foreground">
-                Our <span className="text-gold">Story</span>
+                Our <span className="text-primary">Story</span>
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 DC Art & Tattoo Studio was born from a deep passion for both fine art and body art. Located in the heart of Padmanabhanagar, Bengaluru, we've built a reputation as one of the area's most trusted and creative tattoo studios.
@@ -53,7 +53,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-up">
             <h2 className="text-4xl font-bold mb-4 text-foreground">
-              Our <span className="text-gold">Values</span>
+              Our <span className="text-primary">Values</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               The principles that guide every tattoo we create
@@ -63,29 +63,29 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                icon: <Palette className="w-10 h-10 text-gold" />,
+                icon: <Palette className="w-10 h-10 text-primary" />,
                 title: "Artistic Excellence",
                 description: "Every tattoo is a unique masterpiece, crafted with precision and creativity.",
               },
               {
-                icon: <Heart className="w-10 h-10 text-gold" />,
+                icon: <Heart className="w-10 h-10 text-primary" />,
                 title: "Client-Centered",
                 description: "Friendly artists who listen to your vision and bring it to life perfectly.",
               },
               {
-                icon: <Shield className="w-10 h-10 text-gold" />,
+                icon: <Shield className="w-10 h-10 text-primary" />,
                 title: "Safety First",
                 description: "Highest hygiene standards with sterilized equipment and professional practices.",
               },
               {
-                icon: <Award className="w-10 h-10 text-gold" />,
+                icon: <Award className="w-10 h-10 text-primary" />,
                 title: "5-Star Quality",
                 description: "Our perfect rating reflects our commitment to excellence in every project.",
               },
             ].map((value, index) => (
               <Card
                 key={index}
-                className="p-8 bg-card border-border hover:border-gold transition-all duration-300 text-center animate-fade-up"
+                className="p-8 bg-card border-border hover:border-primary transition-all duration-300 text-center animate-fade-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="flex justify-center mb-4">{value.icon}</div>
@@ -102,7 +102,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-up">
             <h2 className="text-4xl font-bold mb-4 text-foreground">
-              Our <span className="text-gold">Expertise</span>
+              Our <span className="text-primary">Expertise</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Diverse artistic skills to bring any vision to life
@@ -138,10 +138,10 @@ const About = () => {
             ].map((expertise, index) => (
               <Card
                 key={index}
-                className="p-6 bg-card border-border hover:border-gold transition-all duration-300 animate-fade-up"
+                className="p-6 bg-card border-border hover:border-primary transition-all duration-300 animate-fade-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <h3 className="text-lg font-semibold mb-3 text-gold">{expertise.title}</h3>
+                <h3 className="text-lg font-semibold mb-3 text-primary">{expertise.title}</h3>
                 <p className="text-muted-foreground text-sm">{expertise.description}</p>
               </Card>
             ))}
@@ -154,7 +154,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-up">
             <h2 className="text-4xl font-bold mb-6 text-foreground">
-              Our <span className="text-gold">Philosophy</span>
+              Our <span className="text-primary">Philosophy</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               "A tattoo is more than just ink on skin—it's a story, a memory, a piece of art you carry forever. That's why we treat every client and every design with the respect and attention it deserves."

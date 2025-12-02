@@ -50,18 +50,18 @@ const Reviews = () => {
           <div className="text-center animate-fade-up">
             <div className="inline-flex items-center space-x-2 mb-6">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-8 h-8 fill-gold text-gold" />
+                <Star key={i} className="w-8 h-8 fill-primary text-primary" />
               ))}
             </div>
             <h1 className="text-5xl font-bold mb-6 text-foreground">
-              Client <span className="text-gold">Reviews</span>
+              Client <span className="text-primary">Reviews</span>
             </h1>
             <div className="flex items-center justify-center space-x-4 text-2xl mb-4">
-              <span className="text-gold font-bold">5.0</span>
+              <span className="text-primary font-bold">5.0</span>
               <span className="text-muted-foreground">Perfect Rating</span>
             </div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Based on <span className="text-gold font-semibold">241+ verified reviews</span> from satisfied clients
+              Based on <span className="text-primary font-semibold">241+ verified reviews</span> from satisfied clients
             </p>
           </div>
         </div>
@@ -72,19 +72,19 @@ const Reviews = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center animate-fade-up">
-              <div className="text-4xl font-bold text-gold mb-2">241+</div>
+              <div className="text-4xl font-bold text-primary mb-2">241+</div>
               <div className="text-sm text-muted-foreground">Reviews</div>
             </div>
             <div className="text-center animate-fade-up" style={{ animationDelay: "100ms" }}>
-              <div className="text-4xl font-bold text-gold mb-2">5.0</div>
+              <div className="text-4xl font-bold text-primary mb-2">5.0</div>
               <div className="text-sm text-muted-foreground">Rating</div>
             </div>
             <div className="text-center animate-fade-up" style={{ animationDelay: "200ms" }}>
-              <div className="text-4xl font-bold text-gold mb-2">100%</div>
+              <div className="text-4xl font-bold text-primary mb-2">100%</div>
               <div className="text-sm text-muted-foreground">Satisfied</div>
             </div>
             <div className="text-center animate-fade-up" style={{ animationDelay: "300ms" }}>
-              <div className="text-4xl font-bold text-gold mb-2">5+</div>
+              <div className="text-4xl font-bold text-primary mb-2">5+</div>
               <div className="text-sm text-muted-foreground">Years</div>
             </div>
           </div>
@@ -98,16 +98,16 @@ const Reviews = () => {
             {reviews.map((review, index) => (
               <Card
                 key={index}
-                className="p-6 bg-card border-border hover:border-gold transition-all duration-300 animate-fade-up"
+                className="p-6 bg-card border-border hover:border-primary transition-all duration-300 animate-fade-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex space-x-1">
                     {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-gold text-gold" />
+                      <Star key={i} className="w-4 h-4 fill-primary text-primary" />
                     ))}
                   </div>
-                  <Quote className="w-8 h-8 text-gold opacity-20" />
+                  <Quote className="w-8 h-8 text-primary opacity-20" />
                 </div>
 
                 <p className="text-muted-foreground mb-4 leading-relaxed">"{review.text}"</p>
@@ -130,7 +130,7 @@ const Reviews = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12 animate-fade-up">
               <h2 className="text-4xl font-bold mb-4 text-foreground">
-                Why Clients <span className="text-gold">Love Us</span>
+                Why Clients <span className="text-primary">Love Us</span>
               </h2>
               <p className="text-muted-foreground">
                 Here's what sets us apart and earns us consistent 5-star reviews
@@ -161,7 +161,7 @@ const Reviews = () => {
                   className="p-6 bg-card border-border animate-fade-up"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <h3 className="text-lg font-semibold mb-2 text-gold">{item.title}</h3>
+                  <h3 className="text-lg font-semibold mb-2 text-primary">{item.title}</h3>
                   <p className="text-sm text-muted-foreground">{item.description}</p>
                 </Card>
               ))}
@@ -175,7 +175,7 @@ const Reviews = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto animate-fade-up">
             <h2 className="text-4xl font-bold mb-6 text-foreground">
-              Experience <span className="text-gold">5-Star Service</span>
+              Experience <span className="text-primary">5-Star Service</span>
             </h2>
             <p className="text-muted-foreground mb-8">
               Join hundreds of satisfied clients and get your dream tattoo today
@@ -185,7 +185,7 @@ const Reviews = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="lg" className="bg-gold hover:bg-gold-light text-background">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 Book Your Appointment
               </Button>
             </a>

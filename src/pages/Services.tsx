@@ -7,7 +7,7 @@ const Services = () => {
 
   const services = [
     {
-      icon: <Paintbrush className="w-12 h-12 text-gold" />,
+      icon: <Paintbrush className="w-12 h-12 text-primary" />,
       title: "Custom Tattoo Design",
       description: "Unique, personalized tattoos crafted specifically for you. From concept sketches to final execution, we work closely with you to create a design that perfectly captures your vision and story.",
       features: [
@@ -21,7 +21,7 @@ const Services = () => {
       cta: "Book Tattoo Design",
     },
     {
-      icon: <Scissors className="w-12 h-12 text-gold" />,
+      icon: <Scissors className="w-12 h-12 text-primary" />,
       title: "Professional Piercing",
       description: "Safe, hygienic body piercing services performed by experienced professionals using sterilized equipment and proper techniques. We prioritize your safety and comfort throughout the process.",
       features: [
@@ -35,7 +35,7 @@ const Services = () => {
       cta: "Book Piercing",
     },
     {
-      icon: <ImageIcon className="w-12 h-12 text-gold" />,
+      icon: <ImageIcon className="w-12 h-12 text-primary" />,
       title: "Pencil Sketch Commissions",
       description: "Detailed, lifelike pencil sketches perfect for gifts or personal keepsakes. We create stunning portrait work and custom illustrations that capture emotions and memories.",
       features: [
@@ -49,7 +49,7 @@ const Services = () => {
       cta: "Commission Sketch",
     },
     {
-      icon: <Palette className="w-12 h-12 text-gold" />,
+      icon: <Palette className="w-12 h-12 text-primary" />,
       title: "Paintings & Canvas Art",
       description: "Original paintings and commissioned artwork in various styles and mediums. Whether you want abstract, realistic, or contemporary art, we create pieces that transform your space.",
       features: [
@@ -63,7 +63,7 @@ const Services = () => {
       cta: "Order Painting",
     },
     {
-      icon: <Sparkles className="w-12 h-12 text-gold" />,
+      icon: <Sparkles className="w-12 h-12 text-primary" />,
       title: "Mixed Media Artwork",
       description: "Innovative combinations of different artistic techniques and materials to create unique, textured pieces. Perfect for those seeking something truly one-of-a-kind.",
       features: [
@@ -77,7 +77,7 @@ const Services = () => {
       cta: "Create Mixed Media",
     },
     {
-      icon: <Sparkles className="w-12 h-12 text-gold" />,
+      icon: <Sparkles className="w-12 h-12 text-primary" />,
       title: "Dream Catcher Art",
       description: "Handcrafted dream catchers with intricate designs, personal symbolism, and beautiful detailing. Each piece is created with care and spiritual intention.",
       features: [
@@ -99,7 +99,7 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="text-center animate-fade-up">
             <h1 className="text-5xl font-bold mb-6 text-foreground">
-              Our <span className="text-gold">Services</span>
+              Our <span className="text-primary">Services</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Professional tattoo and art services tailored to bring your vision to life
@@ -115,7 +115,7 @@ const Services = () => {
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="p-8 bg-card border-border hover:border-gold transition-all duration-300 animate-fade-up"
+                className="p-8 bg-card border-border hover:border-primary transition-all duration-300 animate-fade-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="mb-6">{service.icon}</div>
@@ -125,11 +125,11 @@ const Services = () => {
                 </p>
 
                 <div className="mb-6">
-                  <h3 className="text-sm font-semibold text-gold mb-3">What's Included:</h3>
+                  <h3 className="text-sm font-semibold text-primary mb-3">What's Included:</h3>
                   <ul className="grid grid-cols-2 gap-2">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="text-sm text-muted-foreground flex items-center">
-                        <span className="w-1.5 h-1.5 bg-gold rounded-full mr-2" />
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2" />
                         {feature}
                       </li>
                     ))}
@@ -141,7 +141,7 @@ const Services = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button className="w-full bg-gold hover:bg-gold-light text-background">
+                  <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     {service.cta}
                   </Button>
@@ -158,7 +158,7 @@ const Services = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12 animate-fade-up">
               <h2 className="text-4xl font-bold mb-4 text-foreground">
-                Professional <span className="text-gold">Aftercare</span>
+                Professional <span className="text-primary">Aftercare</span>
               </h2>
               <p className="text-muted-foreground">
                 We provide comprehensive aftercare guidance to ensure your tattoo heals perfectly
@@ -185,7 +185,7 @@ const Services = () => {
                   className="p-6 bg-card border-border text-center animate-fade-up"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <h3 className="text-lg font-semibold mb-3 text-gold">{item.title}</h3>
+                  <h3 className="text-lg font-semibold mb-3 text-primary">{item.title}</h3>
                   <p className="text-sm text-muted-foreground">{item.description}</p>
                 </Card>
               ))}
@@ -210,13 +210,13 @@ const Services = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button size="lg" className="bg-gold hover:bg-gold-light text-background">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                   <MessageCircle className="w-5 h-5 mr-2" />
                   Book on WhatsApp
                 </Button>
               </a>
               <a href="tel:07406008294">
-                <Button size="lg" variant="outline" className="border-gold text-gold hover:bg-gold hover:text-background">
+                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                   Call Us Now
                 </Button>
               </a>

@@ -33,7 +33,7 @@ const Home = () => {
 
         <div className="container mx-auto px-4 z-10 text-center animate-fade-up">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
-            D C Art & <span className="text-gold">Tattoo Studio</span>
+            D C Art & <span className="text-primary">Tattoo Studio</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Where Creativity Meets Skin
@@ -44,13 +44,13 @@ const Home = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-gold hover:bg-gold-light text-background font-semibold">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Book on WhatsApp
               </Button>
             </a>
             <a href="tel:07406008294">
-              <Button size="lg" variant="outline" className="border-gold text-gold hover:bg-gold hover:text-background">
+              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 <Phone className="w-5 h-5 mr-2" />
                 Call Now
               </Button>
@@ -78,7 +78,7 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-up">
               <h2 className="text-4xl font-bold mb-6 text-foreground">
-                Premium Art & <span className="text-gold">Tattoo Excellence</span>
+                Premium Art & <span className="text-primary">Tattoo Excellence</span>
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 At DC Art & Tattoo Studio, we blend artistic mastery with technical precision to create tattoos that tell your story. Our experienced artists specialize in diverse styles from bold realism to delicate minimal designs.
@@ -87,14 +87,14 @@ const Home = () => {
                 Beyond tattoos, we offer custom pencil sketches, paintings, mixed media artwork, and dream catchers—all crafted with the same dedication to excellence that earned us a perfect 5.0★ rating.
               </p>
               <Link to="/about">
-                <Button variant="outline" className="border-gold text-gold hover:bg-gold hover:text-background">
+                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                   Learn More About Us
                 </Button>
               </Link>
             </div>
             <div className="relative animate-scale-in">
               <img src={artistWorking} alt="Artist at work" className="rounded-lg shadow-2xl" />
-              <div className="absolute -bottom-6 -right-6 bg-gold text-background p-6 rounded-lg shadow-xl">
+              <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 rounded-lg shadow-xl">
                 <div className="text-3xl font-bold">5+ Years</div>
                 <div className="text-sm">Experience</div>
               </div>
@@ -108,7 +108,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-up">
             <h2 className="text-4xl font-bold mb-4 text-foreground">
-              Featured <span className="text-gold">Artwork</span>
+              Featured <span className="text-primary">Artwork</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Explore our portfolio showcasing diverse styles from bold realism to intricate minimal designs
@@ -116,7 +116,7 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {featuredWorks.map((work, index) => <Card key={index} className="group overflow-hidden bg-card border-border hover:border-gold transition-all duration-300 cursor-pointer animate-fade-up" style={{
+            {featuredWorks.map((work, index) => <Card key={index} className="group overflow-hidden bg-card border-border hover:border-primary transition-all duration-300 cursor-pointer animate-fade-up" style={{
             animationDelay: `${index * 100}ms`
           }}>
                 <div className="aspect-square relative overflow-hidden">
@@ -132,7 +132,7 @@ const Home = () => {
 
           <div className="text-center">
             <Link to="/gallery">
-              <Button size="lg" className="bg-gold hover:bg-gold-light text-background">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <ImageIcon className="w-5 h-5 mr-2" />
                 View Full Gallery
               </Button>
@@ -146,7 +146,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-up">
             <h2 className="text-4xl font-bold mb-4 text-foreground">
-              Our <span className="text-gold">Services</span>
+              Our <span className="text-primary">Services</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Professional tattoo and art services tailored to your vision
@@ -157,16 +157,16 @@ const Home = () => {
             {[{
             title: "Custom Tattoos",
             description: "Unique designs crafted specifically for you—from concept to completion.",
-            icon: <Star className="w-8 h-8 text-gold" />
+            icon: <Star className="w-8 h-8 text-primary" />
           }, {
             title: "Art Commissions",
             description: "Pencil sketches, paintings, and mixed media artwork for your space.",
-            icon: <ImageIcon className="w-8 h-8 text-gold" />
+            icon: <ImageIcon className="w-8 h-8 text-primary" />
           }, {
             title: "Professional Care",
             description: "Hygienic practices and comprehensive aftercare guidance.",
-            icon: <Users className="w-8 h-8 text-gold" />
-          }].map((service, index) => <Card key={index} className="p-8 bg-card border-border hover:border-gold transition-all duration-300 hover:shadow-lg hover:shadow-gold/20 animate-fade-up" style={{
+            icon: <Users className="w-8 h-8 text-primary" />
+          }].map((service, index) => <Card key={index} className="p-8 bg-card border-border hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 animate-fade-up" style={{
             animationDelay: `${index * 100}ms`
           }}>
                 <div className="mb-4">{service.icon}</div>
@@ -177,7 +177,7 @@ const Home = () => {
 
           <div className="text-center mt-12">
             <Link to="/services">
-              <Button variant="outline" className="border-gold text-gold hover:bg-gold hover:text-background">
+              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 View All Services
               </Button>
             </Link>
@@ -187,23 +187,23 @@ const Home = () => {
 
       {/* CTA Section */}
       <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-gold/10 via-gold/5 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent" />
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-4xl font-bold mb-6 text-foreground animate-fade-up">
-            Ready to Get Your <span className="text-gold">Dream Tattoo?</span>
+            Ready to Get Your <span className="text-primary">Dream Tattoo?</span>
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-up">
             Book your consultation today and let's bring your vision to life
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up">
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-gold hover:bg-gold-light text-background">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Book on WhatsApp
               </Button>
             </a>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="border-gold text-gold hover:bg-gold hover:text-background">
+              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 Contact Us
               </Button>
             </Link>
@@ -212,4 +212,5 @@ const Home = () => {
       </section>
     </div>;
 };
+
 export default Home;

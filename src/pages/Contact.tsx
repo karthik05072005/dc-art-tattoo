@@ -51,7 +51,7 @@ Preferred Date: ${formData.preferredDate}`;
         <div className="container mx-auto px-4">
           <div className="text-center animate-fade-up">
             <h1 className="text-5xl font-bold mb-6 text-foreground">
-              Get In <span className="text-gold">Touch</span>
+              Get In <span className="text-primary">Touch</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Ready to bring your tattoo vision to life? Contact us today for a consultation
@@ -68,7 +68,7 @@ Preferred Date: ${formData.preferredDate}`;
             <div className="space-y-8 animate-fade-up">
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-foreground">
-                  Contact <span className="text-gold">Information</span>
+                  Contact <span className="text-primary">Information</span>
                 </h2>
                 <p className="text-muted-foreground mb-8">
                   Visit us at our studio or reach out through any of the channels below. We're here to answer your questions and help you get started.
@@ -77,7 +77,7 @@ Preferred Date: ${formData.preferredDate}`;
 
               <Card className="p-6 bg-card border-border">
                 <div className="flex items-start space-x-4">
-                  <MapPin className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                  <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Address</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">
@@ -90,7 +90,7 @@ Preferred Date: ${formData.preferredDate}`;
                       href="https://maps.google.com/?q=DC+Art+Tattoo+Studio+Padmanabhanagar+Bengaluru"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block mt-2 text-gold text-sm hover:underline"
+                      className="inline-block mt-2 text-primary text-sm hover:underline"
                     >
                       Get Directions →
                     </a>
@@ -100,12 +100,12 @@ Preferred Date: ${formData.preferredDate}`;
 
               <Card className="p-6 bg-card border-border">
                 <div className="flex items-start space-x-4">
-                  <Phone className="w-6 h-6 text-gold flex-shrink-0" />
+                  <Phone className="w-6 h-6 text-primary flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Phone</h3>
                     <a
                       href="tel:07406008294"
-                      className="text-muted-foreground hover:text-gold transition-colors"
+                      className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       074060 08294
                     </a>
@@ -115,14 +115,14 @@ Preferred Date: ${formData.preferredDate}`;
 
               <Card className="p-6 bg-card border-border">
                 <div className="flex items-start space-x-4">
-                  <MessageCircle className="w-6 h-6 text-gold flex-shrink-0" />
+                  <MessageCircle className="w-6 h-6 text-primary flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">WhatsApp</h3>
                     <a
                       href="https://wa.me/917406008294"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-gold transition-colors"
+                      className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       Chat with us on WhatsApp
                     </a>
@@ -132,7 +132,7 @@ Preferred Date: ${formData.preferredDate}`;
 
               <Card className="p-6 bg-card border-border">
                 <div className="flex items-start space-x-4">
-                  <Clock className="w-6 h-6 text-gold flex-shrink-0" />
+                  <Clock className="w-6 h-6 text-primary flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Hours</h3>
                     <p className="text-muted-foreground">Open Daily</p>
@@ -146,7 +146,7 @@ Preferred Date: ${formData.preferredDate}`;
             <div className="animate-fade-up" style={{ animationDelay: "200ms" }}>
               <Card className="p-8 bg-card border-border">
                 <h2 className="text-2xl font-bold mb-6 text-foreground">
-                  Book Your <span className="text-gold">Consultation</span>
+                  Book Your <span className="text-primary">Consultation</span>
                 </h2>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -218,7 +218,7 @@ Preferred Date: ${formData.preferredDate}`;
 
                   <Button
                     type="submit"
-                    className="w-full bg-gold hover:bg-gold-light text-background"
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                     size="lg"
                   >
                     <Send className="w-5 h-5 mr-2" />
@@ -241,7 +241,7 @@ Preferred Date: ${formData.preferredDate}`;
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12 animate-fade-up">
               <h2 className="text-4xl font-bold mb-4 text-foreground">
-                Visit Our <span className="text-gold">Studio</span>
+                Visit Our <span className="text-primary">Studio</span>
               </h2>
               <p className="text-muted-foreground">
                 Located in the heart of Padmanabhanagar, Bengaluru

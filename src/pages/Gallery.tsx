@@ -198,7 +198,7 @@ const Gallery = () => {
         <div className="container mx-auto px-4">
           <div className="text-center animate-fade-up">
             <h1 className="text-5xl font-bold mb-6 text-foreground">
-              Tattoo <span className="text-gold">Gallery</span>
+              Tattoo <span className="text-primary">Gallery</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               Explore our diverse portfolio showcasing custom tattoos, from bold realism to delicate minimal designs
@@ -212,7 +212,7 @@ const Gallery = () => {
       <section className="py-12 bg-charcoal">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in">
-            {categories.map(category => <Button key={category} onClick={() => setSelectedCategory(category)} variant={selectedCategory === category ? "default" : "outline"} className={selectedCategory === category ? "bg-gold hover:bg-gold-light text-background" : "border-border text-foreground hover:border-gold hover:text-gold"}>
+            {categories.map(category => <Button key={category} onClick={() => setSelectedCategory(category)} variant={selectedCategory === category ? "default" : "outline"} className={selectedCategory === category ? "bg-primary hover:bg-primary/90 text-primary-foreground" : "border-border text-foreground hover:border-primary hover:text-primary"}>
                 {category}
               </Button>)}
           </div>
@@ -223,7 +223,7 @@ const Gallery = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredItems.map((item, index) => <Card key={index} className="group overflow-hidden bg-card border-border hover:border-gold transition-all duration-300 cursor-pointer animate-fade-up" style={{
+            {filteredItems.map((item, index) => <Card key={index} className="group overflow-hidden bg-card border-border hover:border-primary transition-all duration-300 cursor-pointer animate-fade-up" style={{
             animationDelay: `${index * 50}ms`
           }}>
                 <div className="aspect-square relative overflow-hidden">
@@ -231,7 +231,7 @@ const Gallery = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-4 left-4 right-4">
                       <h3 className="text-foreground font-semibold mb-1">{item.title}</h3>
-                      <p className="text-gold text-sm">{item.category}</p>
+                      <p className="text-primary text-sm">{item.category}</p>
                     </div>
                   </div>
                 </div>
@@ -245,13 +245,13 @@ const Gallery = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto animate-fade-up">
             <h2 className="text-4xl font-bold mb-6 text-foreground">
-              Ready to Create Your <span className="text-gold">Masterpiece?</span>
+              Ready to Create Your <span className="text-primary">Masterpiece?</span>
             </h2>
             <p className="text-muted-foreground mb-8">
               Book a consultation to discuss your tattoo idea with our experienced artists
             </p>
             <a href="https://wa.me/917406008294?text=Hi! I'd like to book a consultation for a tattoo." target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-gold hover:bg-gold-light text-background">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 Book Consultation
               </Button>
             </a>

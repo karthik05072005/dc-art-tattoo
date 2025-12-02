@@ -236,7 +236,7 @@ const Art = () => {
           </p>
           <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
             Explore Our{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-rose-400 to-amber-300">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
               Art Gallery
             </span>
           </h1>
@@ -259,8 +259,8 @@ const Art = () => {
                 onClick={() => setActiveCategory(category.id)}
                 className={
                   activeCategory === category.id
-                    ? "bg-gold hover:bg-gold-light text-background shadow-lg shadow-red-500/30"
-                    : "border-border text-foreground hover:border-gold hover:text-gold bg-charcoal"
+                    ? "bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/30"
+                    : "border-border text-foreground hover:border-primary hover:text-primary bg-charcoal"
                 }
               >
                 {category.title}
@@ -297,14 +297,14 @@ const Art = () => {
                   <p className="font-semibold text-foreground mb-1">Ideal for</p>
                   <p>
                     Homes, studios, and commercial spaces that want a{" "}
-                    <span className="text-gold">strong artistic identity</span>.
+                    <span className="text-primary font-semibold">strong artistic identity</span>.
                   </p>
                 </div>
                 <div className="rounded-2xl bg-charcoal/80 border border-border/60 p-4 backdrop-blur">
                   <p className="font-semibold text-foreground mb-1">Commission Options</p>
                   <p>
                     Fully custom sizes, concepts, and color palettes to match your{" "}
-                    <span className="text-gold">interior or brand.</span>
+                    <span className="text-primary font-semibold">interior or brand.</span>
                   </p>
                 </div>
               </div>
@@ -313,7 +313,7 @@ const Art = () => {
                 <p className="text-sm text-muted-foreground">
                   Looking for a specific idea or size? Share your wall, reference photos, or theme –
                   we’ll design a{" "}
-                  <span className="text-gold font-semibold">personalised art concept</span> around
+                  <span className="text-primary font-semibold">personalised art concept</span> around
                   it.
                 </p>
                 <div className="flex flex-wrap gap-3">
@@ -322,7 +322,7 @@ const Art = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button size="sm" className="bg-gold hover:bg-gold-light text-background">
+                    <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                       Book Art Consultation
                     </Button>
                   </a>
@@ -330,7 +330,7 @@ const Art = () => {
                     <Button
                       size="sm"
                       variant="outline"
-                      className="border-gold text-gold hover:bg-gold hover:text-background"
+                      className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                     >
                       Call Studio
                     </Button>
@@ -344,7 +344,7 @@ const Art = () => {
               {current.images.map((src, index) => (
                 <Card
                   key={src}
-                  className="group overflow-hidden bg-card/80 border-border/70 hover:border-gold transition-all duration-300 cursor-zoom-in backdrop-blur"
+                  className="group overflow-hidden bg-card/80 border-border/70 hover:border-primary transition-all duration-300 cursor-zoom-in backdrop-blur"
                   style={{ animationDelay: `${index * 60}ms` }}
                 >
                   <div className="relative aspect-[4/5] overflow-hidden">

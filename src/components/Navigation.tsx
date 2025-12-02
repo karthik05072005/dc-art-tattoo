@@ -39,7 +39,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-gold">DC</span>
+            <span className="text-2xl font-bold text-primary">DC</span>
             <span className="text-xl font-light text-foreground">Art & Tattoo</span>
           </Link>
 
@@ -50,16 +50,16 @@ const Navigation = () => {
                 to={link.path}
                 className={`text-sm font-medium transition-colors relative group ${
                   location.pathname === link.path
-                    ? "text-gold"
-                    : "text-foreground hover:text-gold"
+                    ? "text-primary"
+                    : "text-foreground hover:text-primary"
                 }`}
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
             <a href="tel:07406008294">
-              <Button variant="default" size="sm" className="bg-gold hover:bg-gold-light text-background">
+              <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <Phone className="w-4 h-4 mr-2" />
                 Call Now
               </Button>
@@ -84,15 +84,15 @@ const Navigation = () => {
                   to={link.path}
                   className={`text-sm font-medium transition-colors ${
                     location.pathname === link.path
-                      ? "text-gold"
-                      : "text-foreground hover:text-gold"
+                      ? "text-primary"
+                      : "text-foreground hover:text-primary"
                   }`}
                 >
                   {link.name}
                 </Link>
               ))}
               <a href="tel:07406008294" className="pt-2">
-                <Button variant="default" size="sm" className="bg-gold hover:bg-gold-light text-background w-full">
+                <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
                   <Phone className="w-4 h-4 mr-2" />
                   Call Now
                 </Button>
